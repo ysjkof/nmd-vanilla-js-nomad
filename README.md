@@ -24,3 +24,38 @@ input.value input에서 입력한 값을 얻는다.
 3nd:
 make user name.
 make to Do List.
+
+4nd:
+make Delete:
+HTML에서 삭제.
+
+```
+function aa(event){
+  console.dir(event.target);
+}
+
+delBtn에 addEventListener("click", aa);
+```
+
+- console.dir에서 parentNode 경로를 알 수 있다. -> `console.dir(event.target.parentNode);`
+- 강의에서 `filter`를 사용하지만 이해가 안되서 splice와 parseInt를 사용함.
+  - parseInt: string을 number로 바꿔줌.
+
+5nd:
+make background images:
+
+- `Math.floor()` 0~1까지 무작위 출력.
+- `Math.foor(3.9)` 나머지를 버리고 출력함.
+- `Math.ceil(3.9)` 나머지를 올리고 출력함.
+
+6nd:
+make weather: VSCode live server 확장에서 실행하면 위치를 묻지도 않는다.
+
+## syntax
+
+localStorage.getItem(TODOS_LS) : 로컬 스토리지의 key값 TODOS_LS를 불러온다.
+localStorage.setItem(TODOS_LS, a) : 로컬 스토리지의 key값 TODOS_LS에 a를 저장한다.
+하지만 localStorage에는 JS의 data를 넣을 수 없다.
+
+- string만 가능하고 모든 데이터를 string으로 저장하고 불러온다.
+- JS obj를 string이 되게 해야 하고 이때 `JSON.stringify`를 사용한다.
