@@ -1,13 +1,26 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <link rel="stylesheet" href="index.css"/>
-    <title>Document</title>
+	<link rel="stylesheet" href="index.css"/>
+	<meta charset="utf-8" />
+	<title>Document</title>
 </head>
 <body>
-    <div class="js-clock">
-        <h1 class="js-title">00:00</h1>
-    </div>
-    <script src="clock.js"></script>
+	<div class="js-clock">
+		<h1 class="js-title">00:00</h1>
+	</div>
+
+	<form class="js-form form">
+		<input type="text" class="text" placeholder="이름을 입력하세요." />
+	</form>
+	<h4 class="js-greetings greetings"></h4>
+	<form class="js-toDoForm">
+		<input type="text" placeholder="할 일을 입력하세요." />
+	</form>
+	<ul class="js-toDoList">
+	</ul>
+	<script src="clock.js"></script>
+	<script src="gretting.js"></script>
+	<script src="todo.js"></script>
 </body>
 </html>
