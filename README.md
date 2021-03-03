@@ -49,13 +49,17 @@ make background images:
 - `Math.ceil(3.9)` 나머지를 올리고 출력함.
 
 6nd:
-make weather: VSCode live server 확장에서 실행하면 위치를 묻지도 않는다.
+make weather
+VSCode live server에서 웹을 열고 있으면 위치를 묻지도 않는다.
+openweathermap API를 이용해서 날짜 정보를 받아 온다.
+
+7nd:
 
 ## syntax
 
 localStorage.getItem(TODOS_LS) : 로컬 스토리지의 key값 TODOS_LS를 불러온다.
 localStorage.setItem(TODOS_LS, a) : 로컬 스토리지의 key값 TODOS_LS에 a를 저장한다.
-하지만 localStorage에는 JS의 data를 넣을 수 없다.
 
-- string만 가능하고 모든 데이터를 string으로 저장하고 불러온다.
-- JS obj를 string이 되게 해야 하고 이때 `JSON.stringify`를 사용한다.
+- 하지만 localStorage에는 string만 넣을 수 있다. JS의 data가 string이 아니라면 오류.
+- 모든 데이터를 string으로 저장하고 불러오라.
+- JS Obj를 string으로 바꾸는데 이때 `JSON.stringify`를 사용한다.
