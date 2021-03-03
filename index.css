@@ -42,14 +42,27 @@ main {
 	padding-bottom: 7px;
 }
 
+input:focus{
+	outline: none;
+	text-align: center;
+}
+
+.js-form input,
 .js-toDoForm input {
-	border-radius: 8px;
+	border-radius: 12px;
 	border: none;
-	width: 190px;
-	height: 19px;
+	height: 21px;
+	width: 300px;
 	margin: 40px 0;
 }
 
+.js-form input {
+	height: 25px;
+	width: 120px;
+	border-radius: 20px;
+}
+
+.js-form input::placeholder,
 .js-toDoForm input::placeholder{
 	text-align: center;
 }
