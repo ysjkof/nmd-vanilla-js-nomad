@@ -52,6 +52,7 @@ make background images:
 make weather
 VSCode live server에서 웹을 열고 있으면 위치를 묻지도 않는다.
 openweathermap API를 이용해서 날짜 정보를 받아 온다.
+- adguard 실행 중에는 사파리에서 위치정보를 묻는 창이 안나온다.
 
 7nd:
 
